@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" 
+    crossorigin="anonymous">
+    <script src="main.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+    </style>   
+    <title>Youtube Clone</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <i class="fab fa-youtube"></i>
+            <span class="title">Youtube</span>
+        </div>
+        <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-ellipsis-v"></i>  
+        </div>
+    </header>
+
+    <!-- Video Player -->
+    <section class="player">
+        <video controls src="video/video.mp4"></video>
+    </section>
+
+    <div class="infoAndUpNext">
+        <!-- Video Info -->
+        <section class="info">
+            <!-- Metadata -->
+            <div class="metadata">
+                <ul class="hashtags">
+                    <li>#Vlog</li>
+                    <li>#SeoulTour</li>
+                    <li>#Juyeon</li>
+                </ul>
+                <div class="titleAndButton">
+                    <span class="title clamp">
+                        귀여운 쭈여니의 당일치기 서울여행 브이로그! | Juyeon's Seoul Tour Vlog | 사랑스러운 쭈여닝 | 경북대 글로벌소프트웨어학과 21학번 강주연 | 경북대 최고 미인 최고 귀요미 쭈여닝 | 애교쟁이 이쁨쟁이 욕구쟁이 심술쟁이 애기쟁이 찡찡이
+                    </span>
+                    <button class="moreBtn">
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                </div>
+                <span class="views">1M views 1 month ago</span>
+            </div>
+            <!-- Actions -->
+            <ul class="actions">
+                <li>
+                    <button><i class="active fas fa-thumbs-up"></i><span>1K</span></button>
+                </li>
+                <li>
+                    <button><i class="fas fa-thumbs-down"></i><span>0</span></button>
+                </li>
+                <li>
+                    <button><i class="fas fa-share"></i><span>Share</span></button>
+                </li>
+                <li>
+                    <button><i class="fas fa-plus"></i><span>Save</span></button>
+                </li>
+                <li>
+                    <button><i class="fab fa-font-awesome-flag"></i><span>Report</span></button>
+                </li>
+            </ul>
+            <!-- Channel Description -->
+            <div class="channel">
+                <div class="metadata">
+                    <img src="image/image.jpg" alt="" />
+                    <div class="info">
+                        <span class="name">쭈쭈여닝</span>
+                        <span class="subscribers">1M subscribers</span></div>
+                    </div>
+                <button class="subscribe">subscribe</button>
+            </div>
+        </section>
+        <!-- Up Next -->
+        <section class="upNext">
+            <span class="title">Up next</span>
+            <ul>
+                <li class="item">
+                    <div class="img"><img src="image/1.PNG" alt=""></div>               
+                    <div class="info">
+                        <span class="title">알랄랄라 뿡뿡뿡 올롤롤로 뿡뿡뿡 빵구쟁이 쭈여니의 여행이야기#1 | 사랑스러운 쭈여닝 | 경북대 글로벌소프트웨어학과 21학번 강주연 | 경북대 최고 미인 최고 귀요미 쭈여닝 | 애교쟁이 이쁨쟁이 욕구쟁이 심술쟁이 애기쟁이 찡찡이</span>
+                        <span class="name">쭈쭈여닝</span>
+                        <span class="views">82K views</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                </li>
+                <li class="item">
+                    <div class="img"><img src="image/2.PNG" alt=""></div>
+                    <div class="info">
+                        <span class="title">알랄랄라 뿡뿡뿡 올롤롤로 뿡뿡뿡 빵구쟁이 쭈여니의 여행이야기#2 | 사랑스러운 쭈여닝 | 경북대 글로벌소프트웨어학과 21학번 강주연 | 경북대 최고 미인 최고 귀요미 쭈여닝 | 애교쟁이 이쁨쟁이 욕구쟁이 심술쟁이 애기쟁이 찡찡이</span>
+                        <span class="name">쭈쭈여닝</span>
+                        <span class="views">92K views</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                </li>
+                <li class="item">
+                    <div class="img"><img src="image/3.PNG" alt=""></div>
+                    <div class="info">
+                        <span class="title">알랄랄라 뿡뿡뿡 올롤롤로 뿡뿡뿡 빵구쟁이 쭈여니의 여행이야기#3 | 사랑스러운 쭈여닝 | 경북대 글로벌소프트웨어학과 21학번 강주연 | 경북대 최고 미인 최고 귀요미 쭈여닝 | 애교쟁이 이쁨쟁이 욕구쟁이 심술쟁이 애기쟁이 찡찡이</span>
+                        <span class="name">쭈쭈여닝</span>
+                        <span class="views">142K views</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                </li>
+            </ul>
+        </section>
+    </div>  
+</body>
+</html>
