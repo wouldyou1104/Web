@@ -1,0 +1,152 @@
+:root {
+  /* Color  */
+  --white-color: #fff;
+  --black-color: #140a00;
+  --blue-color: #045fd4;
+  --red-color: #ff0000;
+  --grey-dark-color: #909090;
+  --grey-light-color: #e0e0e0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* menu */
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #ffebee;
+  padding: 1vw;
+  height: 5em;
+}
+
+/* logo */
+
+.menu .logo {
+  display: flex;
+  align-items: center;
+  color: #c48b9f;
+}
+
+.menu .logo i {
+  font-size: 2.5em;
+}
+
+.menu .logo span {
+  padding-left: 5px;
+  font-size: 1.5em;
+}
+
+/* content */
+
+.menu .content {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 1.5em;
+}
+
+.menu .content li a {
+  text-decoration: none;
+}
+
+.menu .content li a i {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 6vw;
+  padding-right: 6vw;
+  font-size: 1.3em;
+}
+
+.menu .content li a i span {
+  font-size: 0.4em;
+  padding-top: 4px;
+}
+
+/* hyperlink set */
+
+.menu .content li a:link {
+  color: #c48b9f;
+}
+
+.menu .content li a:visited {
+  color: #c48b9f;
+}
+
+.menu .content li a:active {
+  color: #c48b9f;
+}
+
+.menu .content li a:hover {
+  background-color: #fce4ec;
+  border-radius: 4px;
+}
+
+/* login */
+
+.menu .login a {
+  color: #c48b9f;
+  text-decoration: none;
+}
+
+.menu .login a i {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1.5em;
+  border-left: 1px solid #c48b9f;
+  padding-left: 1vw;
+}
+
+.menu .login a i span {
+  font-size: 0.5em;
+}
+
+.toogleBtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: #c48b9f;
+}
+
+@media screen and (max-width: 800px) {
+  .menu .content {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .menu .content li {
+    width: 100%;
+  }
+
+  .menu {
+    justify-content: center;
+  }
+
+  .menu .login a i {
+    position: absolute;
+    right: 1vw;
+    top: 1.75vh;
+  }
+
+  .toogleBtn {
+    display: block;
+    position: absolute;
+    left: 2.5vw;
+  }
+
+  .content.active {
+    display: flex;
+  }
+}
