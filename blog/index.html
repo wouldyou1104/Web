@@ -9,32 +9,58 @@
     integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" 
     crossorigin="anonymous">
     <script src="main.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+        </style>
     <title>Blog</title>
 </head>
 <body>
+    <!-- menu bar -->
     <nav class="menu">
         <div class="logo">
-            <i class="fas fa-paw"></i>
+            <a href="#home"><i class="fas fa-paw"></i></a>    
             <span>Juyeon's Blog</span>
         </div>
         <ul class="content">
-            <li class ="home">
-                <a href="index.html"><i class="fas fa-home"><span>home</span></i></a>
+            <li class ="menu_main">
+                <a href="#main"><i class="fas fa-home"></i><span>Home</span></a>
             </li>
-            <li class ="blog">
-                <a href="index.html"><i class="fas fa-blog"><span>blog</span></i></a>
+            <li class ="menu_blog">
+                <a href="#blog"><i class="fas fa-blog"></i><span>Blog</span></a>
             </li>
-            <li class ="image">
-                <a href="index.html"><i class="far fa-images"><span>image</span></i></a>
+            <li class ="menu_image">
+                <a href="#image"><i class="far fa-images"></i><span>Image</span></a>
             </li>
-            <li class ="comment">
-                <a href="index.html"><i class="far fa-comments"><span>comment</span></i></a>
+            <li class ="menu_comment">
+                <a href="#comment"><i class="far fa-comments"></i><span>Comment</span></a>
             </li>
         </ul>
         <div class="login">
-            <a href="index.html"><i class="fas fa-sign-in-alt"><span>Sign-in</span></i></a>
+            <a href="#sign-in"><i class="fas fa-sign-in-alt"><span>Sign-in</span></i></a>
         </div>
         <a href="#" class="toogleBtn"><i class="fas fa-bars"></i></a>
     </nav>
+    <!-- background image -->
+    <div class="bg"  id="home">
+        <span>Carpe Diem</span>
+    </div>
+    <!-- main -->
+    <div class="main" id="main">
+        <div class="main_image">
+            <img src="image/image.jpg">
+        </div>
+        <div class="title">
+            <h1>쭈여닝</h1>
+            <ul>
+                <li>E-mail - </li>
+                <li>출생 - </li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div class="blog" id="blog"></div>
+    <div class="image" id="image"></div>
+    <div class="comment" id="comment"></div>
+    <div class="sign-in" id="sign-in"></div>
 </body>
 </html>

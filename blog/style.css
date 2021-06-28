@@ -8,6 +8,10 @@
   --grey-light-color: #e0e0e0;
 }
 
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -22,8 +26,10 @@
   align-items: center;
   flex-wrap: wrap;
   background-color: #ffebee;
-  padding: 1vw;
-  height: 5em;
+  padding: 8px 12px;
+  border: 1px groove #c48b9f;
+  position: sticky;
+  top: 0;
 }
 
 /* logo */
@@ -34,7 +40,7 @@
   color: #c48b9f;
 }
 
-.menu .logo i {
+.menu .logo a i {
   font-size: 2.5em;
 }
 
@@ -47,46 +53,51 @@
 
 .menu .content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   list-style: none;
-  font-size: 1.5em;
+  font-weight: bolder;
+  flex: 3;
 }
 
 .menu .content li a {
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .menu .content li a i {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 6vw;
-  padding-right: 6vw;
-  font-size: 1.3em;
+  width: 100px;
+  font-size: 1.5em;
+  /* padding-left: 9vw; */
+  /* padding-right: 9vw; */
+  margin: 0;
 }
 
-.menu .content li a i span {
-  font-size: 0.4em;
+.menu .content li a span {
+  font-size: 0.1em;
   padding-top: 4px;
 }
 
 /* hyperlink set */
 
-.menu .content li a:link {
+.menu .content li a:link,
+.menu .logo a:link {
   color: #c48b9f;
 }
 
-.menu .content li a:visited {
+.menu .content li a:visited,
+.menu .logo a:visited {
   color: #c48b9f;
 }
 
-.menu .content li a:active {
+.menu .content li a:active,
+.menu .logo a:active {
   color: #c48b9f;
-}
-
-.menu .content li a:hover {
-  background-color: #fce4ec;
-  border-radius: 4px;
 }
 
 /* login */
@@ -113,40 +124,133 @@
 .toogleBtn {
   display: none;
   position: absolute;
-  right: 32px;
-  font-size: 24px;
+  font-size: 2em;
   color: #c48b9f;
 }
 
-@media screen and (max-width: 800px) {
+/* bg */
+
+.bg {
+  background-image: url("image/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 17rem 0;
+  font-size: 5em;
+  color: #f3e5f5;
+}
+
+/* main */
+
+.main {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  background-color: #ffebee;
+  height: 70rem;
+}
+
+.main .main_image img {
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.main .title {
+  padding: 0 10vw;
+}
+
+.main .title ul li {
+  list-style: none;
+}
+
+/* blog */
+
+.blog {
+  background-color: #fff1f7;
+  height: 70rem;
+}
+
+/* image */
+
+.image {
+  background-color: #ffebee;
+  height: 70rem;
+}
+
+/* comment */
+
+.comment {
+  background-color: #fff1f7;
+  height: 70rem;
+}
+
+/* sign-in */
+
+.sign-in {
+  background-color: #ffebee;
+  height: 70rem;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    justify-content: center;
+  }
+
+  .menu .logo {
+    align-content: center;
+  }
+
   .menu .content {
     display: none;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding-top: 30px;
   }
 
   .menu .content li {
-    width: 100%;
+    padding-bottom: 18px;
   }
 
-  .menu {
-    justify-content: center;
+  .menu .content li :hover {
+    background-color: #fce4ec;
+    border-radius: 4px;
+  }
+
+  .menu .content li a i {
+    padding-left: 45vw;
+    padding-right: 45vw;
   }
 
   .menu .login a i {
     position: absolute;
     right: 1vw;
-    top: 1.75vh;
+    top: 10px;
   }
 
   .toogleBtn {
     display: block;
     position: absolute;
+    top: 4px;
     left: 2.5vw;
+    padding: 0;
   }
 
   .content.active {
     display: flex;
+  }
+
+  .bg span {
+    padding: 100px 0;
+  }
+
+  .main {
+    flex-direction: column;
+    height: 350px;
   }
 }
